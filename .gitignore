@@ -1,11 +1,17 @@
-# Godot
+# Godot-specific ignores
 .godot/
-*.tscn.bak
-*.gd.bak
-*.import
-*.svg.import
-*.png.import
+*.exe
+*.dll
+*.so
+*.dylib
+*.import/
 *.translation
+*.mo
+
+# Build artifacts
+bin/
+build/
+dist/
 
 # IDE
 .vscode/
@@ -13,14 +19,12 @@
 *.swp
 *.swo
 *~
+
+# OS
 .DS_Store
+Thumbs.db
 
-# Builds
-bin/
-build/
-dist/
-
-# User data
-user_data/
-*.save
-*.tres~
+# Project files
+*.gd.bak
+*.tscn.bak
+*.tres.bak

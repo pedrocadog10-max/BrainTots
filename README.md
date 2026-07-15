@@ -1,49 +1,68 @@
 # BrainTots - RPG de Captura de Criaturas
 
-BrainTots é um RPG de captura de criaturas 100% original com sistema de batalha por turnos, desenvolvido em Godot 4.
+## Descrição
 
-## Características
+BrainTots é um RPG de captura de criaturas 100% original, inspirado em jogos de captura por turnos. O jogo apresenta um mundo aberto com várias cidades, florestas, cavernas e praias, repleto de criaturas conhecidas como BrainTots.
+
+## Recursos
 
 - 🎮 Sistema de batalha por turnos
-- 🌍 Mundo aberto com múltiplas cidades, florestas, cavernas e praias
-- 📊 Sistema completo de leveling, experiência e evolução
+- 🗺️ Mundo aberto com várias localizações
+- 👾 Centenas de BrainTots originais
+- 🎨 Pixel art customizado
 - 💾 Sistema de salvamento automático
-- 🎯 Missões e história principal
-- 🏋️ Ginásios e chefes
-- 🏪 Lojas e centros de cura
-- 🎒 Inventário e Braindex (Pokédex do jogo)
-- ✨ Criaturas e ataques 100% originais
-- 🎨 Pixel art personalizado
+- 🏆 Ginásios e chefes
+- 📚 Braindex (Pokédex do jogo)
+- 🎒 Sistema de inventário
+- 🛒 Lojas e centro de cura
+- 📈 Sistema de níveis e experiência
 
 ## Requisitos
 
-- Godot 4.1 ou superior
+- Godot 4.2+
+- GDScript
 
-## Como Executar
+## Instalação
 
-1. Abra o Godot 4.1+
-2. Clique em "Import" e selecione a pasta do projeto
-3. Clique em "Open in Editor"
-4. Pressione F5 ou clique em Play para executar
+1. Clone este repositório
+2. Abra o projeto no Godot 4
+3. Execute o projeto
 
-## Estrutura do Projeto
+## Estrutura de Pastas
 
 ```
 BrainTots/
-├── assets/          # Sprites, ícones e recursos gráficos
-├── src/
-│   ├── scenes/      # Cenas do jogo
-│   ├── systems/     # Sistemas principais (Game, Save, Audio)
-│   ├── data/        # Dados de BrainTots, ataques, itens
-│   ├── ui/          # Scripts de interface
-│   └── utils/       # Utilitários e helpers
-└── project.godot    # Configuração do projeto
+├── scripts/
+│   ├── managers/
+│   ├── classes/
+│   ├── systems/
+│   ├── ui/
+│   ├── world/
+│   ├── npc/
+│   ├── items/
+│   └── database/
+├── scenes/
+│   ├── ui/
+│   └── world/
+├── assets/
+│   ├── sprites/
+│   ├── audio/
+│   └── data/
+└── project.godot
 ```
+
+## Como Jogar
+
+1. Comece um novo jogo
+2. Explore o mundo e capture BrainTots
+3. Treine seus BrainTots para ficar mais fortes
+4. Desafie ginásios e vença chefes
+5. Complete a Braindex
 
 ## Desenvolvimento
 
-O jogo está em desenvolvimento ativo. Novos BrainTots, ataques e conteúdo estão sendo adicionados continuamente.
+Este projeto é um jogo completo desenvolvido em Godot 4 com GDScript.
 
 ## Licença
 
-Todas as artes, designs e código são 100% originais para este projeto.
+MIT
