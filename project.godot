@@ -1,0 +1,29 @@
+; Engine configuration for BrainTots RPG
+; This is the project configuration file.
+
+config_version=5
+
+[application]
+
+config/name="BrainTots"
+config/version="1.0.0"
+config/author="BrainTots Developer"
+run/main_scene="res://scenes/ui/MainMenu.tscn"
+config/features=PackedStringArray("4.2", "Forward Plus")
+
+[autoload]
+
+GameManager="*res://scripts/managers/GameManager.gd"
+SaveManager="*res://scripts/managers/SaveManager.gd"
+AudioManager="*res://scripts/managers/AudioManager.gd"
+BrainTotDatabase="*res://scripts/database/BrainTotDatabase.gd"
+
+[debug]
+
+gdscript/warnings/unused_variable=1
+gdscript/warnings/unused_argument=1
+
+[rendering]
+
+textures/canvas_textures/default_texture_filter=0
+renderer/rendering_mode="forward_plus"
