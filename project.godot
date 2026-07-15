@@ -1,5 +1,10 @@
-; Engine configuration for BrainTots RPG
-; This is the project configuration file.
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to keys
 
 config_version=5
 
@@ -7,23 +12,28 @@ config_version=5
 
 config/name="BrainTots"
 config/version="1.0.0"
-config/author="BrainTots Developer"
-run/main_scene="res://scenes/ui/MainMenu.tscn"
-config/features=PackedStringArray("4.2", "Forward Plus")
+config/description="An original creature-catching RPG with turn-based combat and unique BrainTots"
+run/main_scene="res://src/scenes/main_menu/MainMenu.tscn"
+config/features=PackedStringArray("4.1", "forward_plus")
+config/icon="res://assets/icon.svg"
+
+[display]
+
+window/size/viewport_width=1920
+window/size/viewport_height=1080
+window/size/window_width_override=1280
+window/size/window_height_override=720
+window/stretch/mode="canvas_items"
+window/stretch/aspect="keep"
 
 [autoload]
 
-GameManager="*res://scripts/managers/GameManager.gd"
-SaveManager="*res://scripts/managers/SaveManager.gd"
-AudioManager="*res://scripts/managers/AudioManager.gd"
-BrainTotDatabase="*res://scripts/database/BrainTotDatabase.gd"
+GameManager="res://src/systems/GameManager.gd"
+SaveManager="res://src/systems/SaveManager.gd"
+AudioManager="res://src/systems/AudioManager.gd"
 
 [debug]
 
 gdscript/warnings/unused_variable=1
-gdscript/warnings/unused_argument=1
-
-[rendering]
-
-textures/canvas_textures/default_texture_filter=0
-renderer/rendering_mode="forward_plus"
+gdscript/warnings/unused_parameter=1
+gdscript/warnings/unreachable_code=1
